@@ -1,2 +1,2 @@
 # pictureinpicture
-click on start button once screen share starts.
+Click on start button once screen share starts.
