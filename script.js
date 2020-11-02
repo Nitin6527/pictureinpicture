@@ -1,5 +1,7 @@
 const videoElement = document.getElementById('video');
 const button = document.getElementById('button');
+const para = document.getElementById('info');
+
 async function selectMediaStream(){
 	try{
 		const captureStream = await navigator.mediaDevices.getDisplayMedia();
@@ -14,8 +16,10 @@ async function selectMediaStream(){
 }
 button.addEventListener('click', async()=>{
      button.disabled=true;
+     para.hidden=false;
      await videoElement.requestPictureInPicture();
      button.disabled=false;
+     para.hidden=true;
 });
 
 

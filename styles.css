@@ -13,8 +13,12 @@ body{
 	align-items: center;
 	background-color: rgb(37,37,37);
 }
+.main{
+	text-align: center;
+}
 
 .button-container{
+	display: inline-block;
 	border: 2px solid black;
 	padding: 10px;
 	border-radius: 7px;
